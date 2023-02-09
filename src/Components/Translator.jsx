@@ -13,8 +13,8 @@ export default function Translator() {
     axios
     .get(`https://api.funtranslations.com/translate/valyrian.json?text=${translateBtnClick}`)
     .then((res) => {
-      console.log('below is res')
-      console.log(res);
+      // console.log('below is res')
+      // console.log(res);
       setPosts(res.data.contents);
  
     })
@@ -29,9 +29,9 @@ export default function Translator() {
 
   const clickHandler = () => {
 setTranslateBtnClick(text)
-console.log(translateBtnClick)
-console.log('below is posts')
-console.log(posts)
+// console.log(translateBtnClick)
+// console.log('below is posts')
+// console.log(posts)
   }
 
   return (
