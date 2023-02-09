@@ -1,6 +1,7 @@
 import React from 'react'
 import './App.css'
-import Main from './Components/Main'
+import Translator from './Components/Translator'
+
 
 function App() {
 
@@ -8,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <h1>-Valyrian Translator-</h1>
-      <Main/>
+      <Translator/>
     </div>
   )
 }
