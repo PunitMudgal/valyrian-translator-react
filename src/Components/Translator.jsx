@@ -5,7 +5,7 @@ import '../App.css'
 export default function Translator() {
   const [posts, setPosts] = useState([]);
   const [text, setText] = useState('');
-  const [translateBtnClick, setTranslateBtnClick] = useState();
+  const [translateBtnClick, setTranslateBtnClick] = useState('');
 
   // const serverURL = 
 
@@ -21,7 +21,7 @@ export default function Translator() {
     .catch((error) => {
       console.log(error);
     })
-  },[])
+  },[translateBtnClick])
 
   const changeHandler = (event) => {
     setText(event.target.value)
